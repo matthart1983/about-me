@@ -253,7 +253,26 @@ li {
 .experience-meta {
     color: var(--color-accent);
     font-size: 0.875rem;
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
+}
+
+.experience-award {
+    display: inline-block;
+    background-color: #fef3c7;
+    color: #92400e;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    margin-bottom: var(--spacing-xs);
+    margin-right: var(--spacing-xs);
+}
+
+@media (prefers-color-scheme: dark) {
+    .experience-award {
+        background-color: #78350f;
+        color: #fef3c7;
+    }
 }
 
 .experience-card ul {
