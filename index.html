@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Matthew Hartley - Technical Leader at Westpac Institutional Bank, Sydney. Expertise in scaled agile delivery, technical project management, and financial services technology.">
+    <title>Matthew Hartley | Technical Leader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="hero">
+        <div class="container">
+            <h1 class="hero-name">Matthew Hartley</h1>
+            <p class="hero-tagline">Technical Leader · Westpac Institutional Bank · Sydney</p>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading">About</h2>
+                <p class="about-text">
+                    Passionate technical leader at Westpac Institutional Bank with a demonstrated history in
+                    financial services technology. My journey spans hands-on software engineering through to
+                    technical project management and engineering leadership, with expertise in scaled agile
+                    delivery and enterprise architecture.
+                </p>
+                <div class="about-details">
+                    <div class="detail-card">
+                        <h3>Education</h3>
+                        <ul>
+                            <li>MBA, Finance — University of Technology Sydney (2007–2012)</li>
+                            <li>B.Eng (Software), Honours — University of Newcastle (2002–2005)</li>
+                        </ul>
+                    </div>
+                    <div class="detail-card">
+                        <h3>Certifications</h3>
+                        <ul>
+                            <li>SAFe 4.0 — Scaled Agile, Inc.</li>
+                            <li>Professional Scrum Master I (PSM I)</li>
+                            <li>PRINCE2 Practitioner</li>
+                            <li>Sun Certified Java EE Developer</li>
+                        </ul>
+                    </div>
+                    <div class="detail-card">
+                        <h3>Skills</h3>
+                        <ul>
+                            <li>Technical project management & delivery</li>
+                            <li>Scaled agile frameworks & Scrum</li>
+                            <li>Java, Ruby on Rails, front-end development</li>
+                            <li>Financial systems & enterprise architecture</li>
+                        </ul>
+                    </div>
+                    <div class="detail-card">
+                        <h3>Interests</h3>
+                        <ul>
+                            <li>Leadership development & coaching</li>
+                            <li>Generative AI & emerging tech</li>
+                            <li>Daily exercise, travel & tech optimisation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="game-section" aria-labelledby="game-heading">
+            <div class="container">
+                <h2 id="game-heading">Learn More — The Interactive Way</h2>
+                <p class="game-intro">Collect fact orbs as you navigate through the level to discover more about my journey.</p>
+
+                <div class="game-container">
+                    <div class="game-controls-info" aria-live="polite">
+                        <p><strong>Controls:</strong> Arrow keys or WASD to move · Space to jump · E to interact · P to pause · M to mute</p>
+                    </div>
+
+                    <div class="game-wrapper">
+                        <canvas id="game-canvas" width="800" height="400" tabindex="0" aria-label="Interactive platformer game about Matthew Hartley"></canvas>
+
+                        <div class="game-overlay" id="game-start-overlay">
+                            <h3>Fact Finder</h3>
+                            <p>Navigate the level and collect glowing orbs to learn facts about Matthew.</p>
+                            <button id="start-game-btn" class="btn btn-primary">Start Game</button>
+                        </div>
+
+                        <div class="game-overlay hidden" id="game-pause-overlay">
+                            <h3>Paused</h3>
+                            <button id="resume-game-btn" class="btn btn-primary">Resume</button>
+                        </div>
+
+                        <div class="game-overlay hidden" id="game-complete-overlay">
+                            <h3>Level Complete!</h3>
+                            <p id="facts-collected-summary"></p>
+                            <button id="replay-game-btn" class="btn btn-primary">Play Again</button>
+                        </div>
+                    </div>
+
+                    <div class="game-hud">
+                        <div class="progress-container">
+                            <span class="progress-label">Facts Collected:</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-text" id="progress-text">0 / 6</span>
+                        </div>
+                    </div>
+
+                    <div class="fact-popup hidden" id="fact-popup" role="alert" aria-live="assertive">
+                        <p id="fact-text"></p>
+                        <button id="fact-close-btn" class="btn btn-small">Got it!</button>
+                    </div>
+                </div>
+
+                <!-- Accessible fallback for screen readers -->
+                <div class="sr-only" aria-label="Game facts summary">
+                    <h3>Facts about Matthew (accessible version)</h3>
+                    <ul id="facts-list-fallback">
+                        <li>Matthew works at Westpac Institutional Bank in Sydney.</li>
+                        <li>Matthew holds an MBA in Finance from UTS (2007–2012).</li>
+                        <li>Matthew has a Software Engineering degree with Honours from University of Newcastle.</li>
+                        <li>Matthew is SAFe 4.0 certified and a Professional Scrum Master.</li>
+                        <li>Matthew is a certified PRINCE2 Practitioner and Java EE Developer.</li>
+                        <li>Matthew enjoys generative AI projects, travel, and tech optimisation.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <a href="https://www.linkedin.com/in/matt-hartley-b5b28b40/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </p>
+            <p class="footer-copyright">&copy; 2025 Matthew Hartley</p>
+        </div>
+    </footer>
+
+    <script src="game.js" defer></script>
+</body>
+</html>

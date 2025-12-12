@@ -1,0 +1,150 @@
+{
+    "meta": {
+        "version": "1.0",
+        "title": "Fact Finder",
+        "description": "Learn about Matthew Hartley through an interactive platformer"
+    },
+    "facts": [
+        {
+            "id": 1,
+            "category": "career",
+            "text": "Matthew works at Westpac Institutional Bank in Sydney's financial services sector.",
+            "icon": "briefcase"
+        },
+        {
+            "id": 2,
+            "category": "education",
+            "text": "Matthew holds an MBA in Finance from University of Technology Sydney (2007–2012).",
+            "icon": "graduation"
+        },
+        {
+            "id": 3,
+            "category": "education",
+            "text": "Matthew earned a B.Eng (Software) with Honours from University of Newcastle (2002–2005).",
+            "icon": "code"
+        },
+        {
+            "id": 4,
+            "category": "certification",
+            "text": "Matthew is SAFe 4.0 certified and a Professional Scrum Master (PSM I).",
+            "icon": "certificate"
+        },
+        {
+            "id": 5,
+            "category": "certification",
+            "text": "Matthew holds PRINCE2 Practitioner and Sun Certified Java EE Developer credentials.",
+            "icon": "star"
+        },
+        {
+            "id": 6,
+            "category": "personal",
+            "text": "Matthew enjoys generative AI projects, travel, and optimising his tech setup.",
+            "icon": "heart"
+        }
+    ],
+    "level": {
+        "name": "Career Journey",
+        "width": 3200,
+        "height": 400,
+        "gravity": 0.6,
+        "playerSpeed": 4,
+        "jumpForce": 12,
+        "backgroundColor": "#1a1a2e",
+        "segments": [
+            {
+                "name": "Start",
+                "startX": 0,
+                "endX": 500,
+                "theme": "intro"
+            },
+            {
+                "name": "Career",
+                "startX": 500,
+                "endX": 1100,
+                "theme": "career"
+            },
+            {
+                "name": "Education",
+                "startX": 1100,
+                "endX": 1900,
+                "theme": "education"
+            },
+            {
+                "name": "Interests",
+                "startX": 1900,
+                "endX": 2600,
+                "theme": "interests"
+            },
+            {
+                "name": "Finale",
+                "startX": 2600,
+                "endX": 3200,
+                "theme": "finale"
+            }
+        ],
+        "platforms": [
+            { "x": 0, "y": 360, "width": 600, "height": 40, "type": "ground" },
+            { "x": 680, "y": 300, "width": 120, "height": 20, "type": "floating" },
+            { "x": 850, "y": 250, "width": 100, "height": 20, "type": "floating" },
+            { "x": 1000, "y": 360, "width": 400, "height": 40, "type": "ground" },
+            { "x": 1450, "y": 300, "width": 150, "height": 20, "type": "floating" },
+            { "x": 1650, "y": 240, "width": 120, "height": 20, "type": "floating" },
+            { "x": 1820, "y": 360, "width": 500, "height": 40, "type": "ground" },
+            { "x": 2380, "y": 280, "width": 140, "height": 20, "type": "floating" },
+            { "x": 2570, "y": 220, "width": 100, "height": 20, "type": "floating" },
+            { "x": 2720, "y": 360, "width": 480, "height": 40, "type": "ground" }
+        ],
+        "collectibles": [
+            { "x": 400, "y": 300, "factId": 4, "type": "orb" },
+            { "x": 900, "y": 190, "factId": 1, "type": "orb" },
+            { "x": 1550, "y": 240, "factId": 2, "type": "orb" },
+            { "x": 1700, "y": 180, "factId": 3, "type": "orb" },
+            { "x": 2420, "y": 220, "factId": 5, "type": "orb" },
+            { "x": 2610, "y": 160, "factId": 6, "type": "orb" }
+        ],
+        "obstacles": [
+            { "x": 750, "y": 330, "width": 40, "height": 30, "type": "spike", "movement": "none" },
+            { "x": 1200, "y": 320, "width": 50, "height": 40, "type": "walker", "movement": "horizontal", "range": 150, "speed": 1.5 },
+            { "x": 2000, "y": 320, "width": 50, "height": 40, "type": "walker", "movement": "horizontal", "range": 200, "speed": 2 }
+        ],
+        "decorations": [
+            { "x": 100, "y": 280, "type": "sign", "text": "Welcome!" },
+            { "x": 600, "y": 260, "type": "arrow", "direction": "right" },
+            { "x": 1050, "y": 280, "type": "sign", "text": "Career" },
+            { "x": 1850, "y": 280, "type": "sign", "text": "Education" },
+            { "x": 2750, "y": 280, "type": "sign", "text": "Finish" }
+        ],
+        "finishZone": {
+            "x": 3000,
+            "y": 280,
+            "width": 80,
+            "height": 80
+        },
+        "playerStart": {
+            "x": 50,
+            "y": 300
+        }
+    },
+    "colors": {
+        "player": "#4a7c9b",
+        "playerOutline": "#3a6178",
+        "platform": "#2d2d44",
+        "platformGround": "#3d3d5c",
+        "orb": "#ffd700",
+        "orbGlow": "rgba(255, 215, 0, 0.4)",
+        "obstacle": "#e74c3c",
+        "finish": "#2ecc71",
+        "background1": "#1a1a2e",
+        "background2": "#16213e",
+        "background3": "#0f3460"
+    },
+    "audio": {
+        "enabled": true,
+        "volume": 0.3,
+        "effects": {
+            "jump": { "frequency": 400, "duration": 0.1, "type": "square" },
+            "collect": { "frequency": 800, "duration": 0.15, "type": "sine" },
+            "complete": { "frequency": 600, "duration": 0.3, "type": "triangle" }
+        }
+    }
+}
