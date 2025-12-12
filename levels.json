@@ -8,38 +8,38 @@
         {
             "id": 1,
             "category": "career",
-            "text": "Matthew works at Westpac Institutional Bank in Sydney's financial services sector.",
+            "text": "Matt is Chief Engineer at Westpac Institutional Bank, leading engineering direction for core platforms.",
             "icon": "briefcase"
         },
         {
             "id": 2,
-            "category": "education",
-            "text": "Matthew holds an MBA in Finance from University of Technology Sydney (2007–2012).",
-            "icon": "graduation"
+            "category": "leadership",
+            "text": "Matt manages technical specialists delivering high-impact initiatives across operations and infrastructure.",
+            "icon": "team"
         },
         {
             "id": 3,
-            "category": "education",
-            "text": "Matthew earned a B.Eng (Software) with Honours from University of Newcastle (2002–2005).",
+            "category": "skills",
+            "text": "Expert in systems architecture, risk frameworks, process automation, and performance monitoring.",
             "icon": "code"
         },
         {
             "id": 4,
-            "category": "certification",
-            "text": "Matthew is SAFe 4.0 certified and a Professional Scrum Master (PSM I).",
-            "icon": "certificate"
+            "category": "technical",
+            "text": "Skilled in AWS/Azure/GCP, CI/CD pipelines, Python, Terraform, and observability stacks.",
+            "icon": "cloud"
         },
         {
             "id": 5,
-            "category": "certification",
-            "text": "Matthew holds PRINCE2 Practitioner and Sun Certified Java EE Developer credentials.",
-            "icon": "star"
+            "category": "education",
+            "text": "Holds an MBA in Finance (UTS) and B.Eng Software with Honours (Newcastle).",
+            "icon": "graduation"
         },
         {
             "id": 6,
-            "category": "personal",
-            "text": "Matthew enjoys generative AI projects, travel, and optimising his tech setup.",
-            "icon": "heart"
+            "category": "certification",
+            "text": "Certified in SAFe 4.0, Professional Scrum Master, PRINCE2, and Java EE Development.",
+            "icon": "certificate"
         }
     ],
     "level": {

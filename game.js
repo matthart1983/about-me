@@ -105,12 +105,12 @@
         // Fallback game data if JSON fails to load
         return {
             facts: [
-                { id: 1, text: "Matthew works at Westpac Institutional Bank in Sydney's financial services sector." },
-                { id: 2, text: "Matthew holds an MBA in Finance from University of Technology Sydney (2007–2012)." },
-                { id: 3, text: "Matthew earned a B.Eng (Software) with Honours from University of Newcastle (2002–2005)." },
-                { id: 4, text: "Matthew is SAFe 4.0 certified and a Professional Scrum Master (PSM I)." },
-                { id: 5, text: "Matthew holds PRINCE2 Practitioner and Sun Certified Java EE Developer credentials." },
-                { id: 6, text: "Matthew enjoys generative AI projects, travel, and optimising his tech setup." }
+                { id: 1, text: "Matt is Chief Engineer at Westpac Institutional Bank, leading engineering direction for core platforms." },
+                { id: 2, text: "Matt manages technical specialists delivering high-impact initiatives across operations and infrastructure." },
+                { id: 3, text: "Expert in systems architecture, risk frameworks, process automation, and performance monitoring." },
+                { id: 4, text: "Skilled in AWS/Azure/GCP, CI/CD pipelines, Python, Terraform, and observability stacks." },
+                { id: 5, text: "Holds an MBA in Finance (UTS) and B.Eng Software with Honours (Newcastle)." },
+                { id: 6, text: "Certified in SAFe 4.0, Professional Scrum Master, PRINCE2, and Java EE Development." }
             ],
             level: {
                 width: 3200,
