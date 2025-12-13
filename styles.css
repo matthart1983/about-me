@@ -244,21 +244,6 @@ li {
     margin-bottom: var(--spacing-md);
 }
 
-.company-logo {
-    float: left;
-    width: 40px;
-    height: 40px;
-    border-radius: 6px;
-    margin-right: var(--spacing-sm);
-    margin-bottom: var(--spacing-xs);
-}
-
-.experience-card::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .experience-card h4 {
     margin: 0 0 var(--spacing-xs);
     font-size: 1.125rem;
