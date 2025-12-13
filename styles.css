@@ -238,21 +238,25 @@ li {
 .experience-card {
     background-color: var(--color-bg-alt);
     padding: var(--spacing-md);
-    padding-left: calc(var(--spacing-md) + 56px);
     border-radius: var(--border-radius);
     border: 1px solid var(--color-border);
     border-left: 4px solid var(--color-accent);
     margin-bottom: var(--spacing-md);
-    position: relative;
 }
 
 .company-logo {
-    position: absolute;
-    left: var(--spacing-md);
-    top: var(--spacing-md);
+    float: left;
     width: 40px;
     height: 40px;
-    border-radius: 8px;
+    border-radius: 6px;
+    margin-right: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
+}
+
+.experience-card::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .experience-card h4 {
